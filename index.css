@@ -1,0 +1,364 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.body{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.first{
+    width: 100vw;
+    height: 100vh;
+    /* box-shadow: 0px 0px 10px black,
+    inset 1px 1px 50px black; */
+}
+
+.first::before{
+    content: "";
+    background: url('https://source.unsplash.com/random/1920x1080/?wallpaper,landscape');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+    z-index: -1;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.7;
+    overflow: hidden;
+    
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 100%;
+    height: 10%;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+.logo h5{
+    padding: 30%;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 1vw;
+}
+
+
+nav .gg-menu-left-alt{
+    display: none;
+}
+
+
+
+
+
+
+
+@media screen and ( max-width: 900px){
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: black;
+}
+
+    .first{
+    width: 100vw;
+    height: 33vh;
+    
+    
+    background-repeat: no-repeat;
+    background: url('Background.jpg');
+    background-size: 100vw 33vh;
+    background-repeat: no-repeat;
+    
+    overflow: hidden;
+    box-shadow: inset 0px 0px 10px black;
+}
+
+
+
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 15%;
+    color: white;
+    border-bottom: 1px solid black;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+nav a{
+    display: none;
+}
+
+nav .menu{
+    display: block;
+    margin: 2vw;
+    margin-top: 3vw;
+    margin-right: 3vw;
+   
+    
+    
+
+}
+.welcome{
+    display: flex;
+    position: relative;
+    top: 5vh;
+    text-shadow: 0px 0px 30px #000000cd;
+    padding-left: 24vw;
+    font-size: 7vw;
+    color: white;
+    
+    
+    animation: textAnimation 3s 2s 2 alternate;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+
+@keyframes textAnimation {
+
+from{
+    
+    font-size: 7vw;
+}
+
+to{
+    padding-left: 21vw;
+    font-size: 8.5vw;
+}
+  }
+
+}
+
+.w{
+    z-index: 2;
+    
+}
+.e{
+    z-index: 2;
+    
+}
+
+#up{
+    position: absolute;
+    top: 0vh;
+    width: 100vw;
+    height: 33vh;
+    z-index: 1;
+    
+}
+
+.second{
+    width: 100vw;
+    height: 33vh;
+    background-repeat: no-repeat;
+    background: black;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-shadow: 0px -30px 100px black;
+    z-index: 3;
+    overflow: hidden;
+    display: inline;
+   
+}
+
+.third{
+    width: 100vw;
+    height: 34vh;
+    background-repeat: no-repeat;
+    background: black;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+    z-index: 3;
+    overflow: hidden;
+    display: inline;
+}
+
+
+
+
+
+
+
+@keyframes  {
+
+0%{
+    
+}
+
+
+10%{
+    
+}
+
+20%{
+    
+}
+
+30%{
+    
+}
+
+40%{
+    
+}
+
+50%{
+    
+}
+
+60%{
+    
+}
+
+70%{
+    
+}
+
+80%{
+    
+}
+
+90%{
+    
+}
+
+100%{
+    
+}
+    
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    
+    
+}
+
+
+.footer{
+position: fixed;
+bottom: 0px;
+border-top: 1px solid white;
+
+width: 100vw;
+background: black;
+font-family: 'Play', sans-serif;
+
+}
+
+.rowOne{
+    display: flex;
+    
+    justify-content: center;
+}
+
+.footer i{
+    width: auto;
+    margin: 4vw 1vw;
+    
+    padding: 2vw 2vw;
+    color: gray;
+    text-decoration: none;
+    font-size: 5vw;
+    transition: 1s;
+    
+    text-decoration: none;
+}
+
+.footer i::after{
+    content: '';
+    display: block;
+    width: 0;
+    position: relative;
+    left: -25%;
+    margin-top: 1vw;
+    height: 2px;
+    background: white;
+    transition: width 0.5s;
+}
+
+.footer i:hover::after{
+    width: 150%;
+}
+
+.footer i:hover{
+    color: white;
+    
+}
+
+.rowTwo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.rowTwo a{
+    transition: 1s;
+    margin-bottom: 2vh;
+    color: gray;
+    text-decoration: none;
+    position: relative;
+    left: 10vw;
+    font-size: 3vw;
+}
+
+.rowTwo a:hover{
+    color: white;
+}
+
+.rowThree{
+    text-align: center;
+    display: block;
+    font-size: 1vw;
+    color: gray;
+}
+
